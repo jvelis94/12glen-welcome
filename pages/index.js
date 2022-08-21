@@ -15,11 +15,6 @@ export default function Home() {
         <meta name="description" content="12 Glenside Drive" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <h1 className={styles.title}>
-          Big Bass Lake Chalet
-        </h1>
-      </div>
       <div className={styles.topContainer}>
         <Image 
           src={glensidePic}
@@ -28,9 +23,6 @@ export default function Home() {
       </div>
       <div>
         <p>Body</p>
-      </div>
-      <div className={styles.footer}>
-        <BottomNav/>
       </div>
     </div>
   )
