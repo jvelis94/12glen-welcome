@@ -14,7 +14,7 @@ export default function Description() {
             <h3>The Space</h3>
             <p>
                 The modern and comfy getaway will leave you in awe with its carefully picked amenity list spread over two 
-                inviting stories. Stylish wooden floors extend throughout the entire apartment. The second floor's living 
+                inviting stories. Stylish wooden floors extend throughout the entire apartment. The second floor living 
                 area combines the living and the dining room with the kitchen, creating a contemporary open concept design space.
             </p>
             <h3>Summary</h3>
@@ -28,7 +28,7 @@ export default function Description() {
             <h3>The Space</h3>
             <p>
                 The modern and comfy getaway will leave you in awe with its carefully picked amenity list spread over two 
-                inviting stories. Stylish wooden floors extend throughout the entire apartment. The second floor's living 
+                inviting stories. Stylish wooden floors extend throughout the entire apartment. The second floor living 
                 area combines the living and the dining room with the kitchen, creating a contemporary open concept design space.
             </p>
         </div>
