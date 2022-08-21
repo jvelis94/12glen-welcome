@@ -22,7 +22,9 @@ export default function Home() {
       </div>
       <div className={styles.topContainer}>
         <Image 
-          src={glensidePic}/>
+          src={glensidePic}
+          alt="Picture of the house"
+          />
       </div>
       <div>
         <p>Body</p>
