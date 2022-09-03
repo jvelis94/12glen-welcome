@@ -1,11 +1,29 @@
 import { useState } from 'react'
+import ActivityResults from '../components/activityResults'
 import styles from '../styles/Activities.module.css'
+
 
 export default function Activities({data}) {
     const [activeActivity, setActiveActivity] = useState('bars')
     const activities = data.activities
-    console.log(activities)
-    console.log(activities.bars)
+    
+    let activityResults = activities.bars
+    switch(activeActivity) {
+        case 'bars':
+            activityResults = activities.bars
+            break;
+        case 'restaurants':
+            activityResults = activities.restaurants
+            break;
+        case 'outdoors':
+            activityResults = activities.outdoors
+            break;
+        case 'tours':
+            activityResults = activities.tours
+            break
+        default:
+            activityResults = activities.bars
+    }
 
 
 
@@ -21,6 +39,9 @@ export default function Activities({data}) {
                     <li className={activeActivity == 'outdoors' ? styles.activeTab : ''} onClick={() => setActiveActivity('outdoors')}>Outdoors</li>
                     <li className={activeActivity == 'tours' ? styles.activeTab : ''} onClick={() => setActiveActivity('tours')}>Tours</li>
                 </ul>
+            </div>
+            <div>
+                <ActivityResults activeActivity={activeActivity} activityResults={activityResults} />
             </div>
         </div>
     )
