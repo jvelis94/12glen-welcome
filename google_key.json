@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "glenside-361312",
+  "private_key_id": "a75248e21e6b2bb57e80aab6d1d323e840435b0d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDrEVcn3X+PquYW\nslgOAc91gxhPxnIHchPNoNw/pMzgMIIvl8U71qh721mMxv+XDBYl9+XfB/ZhSCRi\nmRSBnUiXaEFJ/dZQWnt9vrWv7tRVpW2GEL/vuAzFoBPfi6/cFtYNifQvSC9OJFuj\n0A58PDY94yrHunPx0NSi4Li7HNCWg85sDusF3dov/tu35o8vzxxADqZgbAYi6z/e\nZOZaOVICt+QdNHKItg4WwPyw7KcXkHtc9ojwZCgRK/OH264PRYFT5BPMWIKgk1oZ\nxuBr2yMcgf3cA0ee6n+fu1I+IFn/ky/d9iDSHAm3hmJaL2L8Y+N4p8vDlkEjvnkk\ngD/Z6/ABAgMBAAECggEAIPSZZ3liPN4Uy/HM7onKcAslCWok6m5P4HBA8JtGLdgf\nKFT6zdzWWibycw4jHyYOpNwQWihfnlvi3f/gJBvM5Y00Og9gUHue/I4UIso08pzy\nsez/O7ht8fbzUk/fI9f/wn4owcg4+ZeXUWwF290FLb//a2j0gF5qsTsYKwNrKu6i\n4whn1nAixHJfLeF/OmU5I/OGo5uB7MF3pv7UspRHs+UMBfSqfVAnezUVO61ZGJSk\ntJhj2/iVr1L33F4P3RBcKPxhmqVVpN4jrNyKwyIoSLRWQlEb56pQyb+U9H5ncmh6\nMHYsgVsqTaX+5vv3c2eyotpYNLuRT11PFy+BBM+CwQKBgQD5QVNPWRialWibPiZO\nfynOr+FGHKDWbxnI+JR+Qz7IRoYf6PJxENWKEw+dVxInfD8Y0yMi4kyIW9UKvX+U\n+aT4gHFEMXAEy5EaiP737TSiStKxruXdXxrDZMjbWYK3n+Vzrkl8CmvEuxDwJm92\nTcO/L1gopy0FnmicGr7w9+x87QKBgQDxbbvcyzJvgtD/DC1UwQQo3Q8Z2k1tqT9X\nrcwRkMQWRLMM5aqlBXS4v3hMRZv0IR7cw6M9XaeupSk815GWYNlzgGdCbOi0061r\ngSwAIZBzz6lO43bY5bK+5zzy7zipmGieoDp+AjV2HOHfD6voPdy2qQThb+SpcKTs\noJXy0Qrw5QKBgQCsDHhp+/DsuxbSmaqtYj9EaMjRsW8ftN6Sh2tQYDBU48EvA4dd\nniYXwaJ0k6Z3VN7kztChAp2bPfAnErie51cFJPuJ+6n71VvaehesoLJFF+qpNTV7\ngWsi1k2Cgx2kjB1ApVwZ38OVrx449f7YJUNpk0+B+CsuhrJkll2YTTmS3QKBgQCH\nS/6mqnz2PvJOrA1PXOeu2stWqp8PoHRt92jQQzeQXymURbTOy/LwgeSxoaTXOCRq\nhXyarDyHQ+mLPidJhbb24nN7pzr181ZRU89Lt4OTU0HHgvOcc4UrNL1USzmO2Wlv\n081TxnsdWOw/rDGjcd+ZwbiJecJELmtObGP78qhV/QKBgQDCPu7Z2toj7sbysmia\nF6pF/9hxqdtbUDL14Kl7vPWmjGBKb5OZ6llSUooZ6OtdBGkmp3XXxWTQXuPd59Ww\n2Skbp+vkA4+92jtbeuaeIVaIoY7GA3d/KLzmhQW5YcQ5uuyTQgbvu9mybXJsl6Yk\nD+6tMwdTRgXMqYPbDY98AyLNYQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "id-2glenside@glenside-361312.iam.gserviceaccount.com",
+  "client_id": "113783770764923708337",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-2glenside%40glenside-361312.iam.gserviceaccount.com"
+}
