@@ -7,6 +7,14 @@
     align-items: center;
     margin: 12px;
   }
+
+  .cardTitle {
+    height: 100%;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .cardProduct img {
     height: 100%;
@@ -28,6 +36,7 @@
     margin-left: 8px;
   }
   
-  .cardProduct .cardProductInfos {
-    padding: 16px;
+  .cardProductInfos {
+    width: 100%;
+    margin: 4px 0px 0px 8px;
   }

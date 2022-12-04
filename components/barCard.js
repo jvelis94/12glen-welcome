@@ -1,15 +1,29 @@
 import * as React from 'react';
 import styles from '../styles/ActivityResults.module.css'
 import { useRouter } from "next/router";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBeer, faLocation, faClock, faMapPin } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 
 export default function BarCard(props) {
     return (
         <div className={styles.cardProduct}>
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div className="cardProductInfos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
+            <div className={styles.cardTitle}>
+                <FontAwesomeIcon icon={faBeer} style={{ fontSize: 64 }}/>
+            </div>
+            <div>
+                <h2>{props.name}</h2>
+                <div className={styles.cardProductInfos}>
+                    <div>
+                        <small><FontAwesomeIcon icon={faLocation}/> {props.miles} miles | <FontAwesomeIcon icon={faClock}/> {props.minutes} minutes</small>
+                    </div>
+                    <div>
+                        <Link href={`http://maps.google.com/?q${props.address}`}>
+                            <a><small>Directions</small></a>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     )
