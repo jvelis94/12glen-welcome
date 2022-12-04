@@ -20,7 +20,7 @@ export default function ActivityCard(props) {
                         <small><FontAwesomeIcon icon={faLocation}/> {props.miles} miles | <FontAwesomeIcon icon={faClock}/> {props.minutes} minutes</small>
                     </div>
                     <div>
-                        <Link href={`http://maps.google.com/?q${props.address}`}>
+                        <Link href={`http://google.com/maps/place/${props.address}`}>
                             <a><small>Directions</small></a>
                         </Link>
                     </div>
