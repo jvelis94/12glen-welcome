@@ -48,10 +48,12 @@ export default function Activities({data}) {
 }
 
 export async function getServerSideProps() {
-    const bars_data = await (await fetch('http://localhost:3000/api/bars-sheet')).json()
-    const restaurants_data = await (await fetch('http://localhost:3000/api/restaurants-sheet')).json()
-    const outdoors_data = await (await fetch('http://localhost:3000/api/outdoors-sheet')).json()
-    const tours_data = await (await fetch('http://localhost:3000/api/tours-sheet')).json()
+    const env = process.env.NODE_ENV
+    const domain = env == "development" ? "http://localhost:3000" : "https://12glen-welcome.vercel.app/"
+    const bars_data = await (await fetch(`${domain}/api/bars-sheet`)).json()
+    const restaurants_data = await (await fetch(`${domain}/api/restaurants-sheet`)).json()
+    const outdoors_data = await (await fetch(`${domain}/api/outdoors-sheet`)).json()
+    const tours_data = await (await fetch(`${domain}/api/tours-sheet`)).json()
 
     return {
         props: {
