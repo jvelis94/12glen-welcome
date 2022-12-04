@@ -24,8 +24,8 @@ export default function BottomNav() {
                     <FontAwesomeIcon icon={faWifi} style={{ fontSize: 28}}/>
                 </a>
             </Link>
-            <Link href="/neighborhood">
-                <a className={ `${styles.card} ${router.pathname == "/neighborhood" ? "activeTab" : ""}`}>
+            <Link href="/activities">
+                <a className={ `${styles.card} ${router.pathname == "/activities" ? "activeTab" : ""}`}>
                     <FontAwesomeIcon icon={faMap} style={{ fontSize: 28}}/>
                 </a>
             </Link>

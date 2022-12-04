@@ -6,10 +6,10 @@ import { useRouter } from "next/router";
 export default function BarCard(props) {
     return (
         <div className={styles.cardProduct}>
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+            <img src={props.img} />
             <div className="cardProductInfos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
+                <h2>{props.name}</h2>
+                <p>{props.type}</p>
             </div>
         </div>
     )
