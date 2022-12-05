@@ -19,3 +19,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#__next {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height:100%;
+  width: 100%;
+}
+
+
+
+main {
+  height: 78vh !important;
+  overflow: scroll;
+}
