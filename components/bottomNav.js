@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleExclamation, faCircleQuestion, faHouse, faMap, faBars, faQuestion, faSign, faWifi } from '@fortawesome/free-solid-svg-icons'
+import { faCircleExclamation, faCircleQuestion, faHouse, faMap, faBars, faQuestion, faSign, faWifi, faClipboardList, faNewspaper } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import { useRouter } from "next/router";
 
@@ -16,7 +16,7 @@ export default function BottomNav() {
         <div className={styles.flexContainer}>
             <Link href="/description">
                 <a className={ `${styles.card} ${router.pathname == "/description" ? "activeTab" : ""}`}>
-                    <FontAwesomeIcon icon={faBars} style={{ fontSize: 28}}/>
+                    <FontAwesomeIcon icon={faNewspaper} style={{ fontSize: 28}}/>
                 </a>
             </Link>
             <Link href="/wifi">
@@ -31,7 +31,7 @@ export default function BottomNav() {
             </Link>
             <Link href="/rules">
                 <a className={ `${styles.card} ${router.pathname == "/rules" ? "activeTab" : ""}`}>
-                    <FontAwesomeIcon icon={faCircleExclamation} style={{ fontSize: 28}}/>
+                    <FontAwesomeIcon icon={faClipboardList} style={{ fontSize: 28}}/>
                 </a>
             </Link>
             <Link href="/faqs">
