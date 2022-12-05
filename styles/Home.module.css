@@ -12,6 +12,10 @@
   height: 100%;
 }
 
+.titleDiv {
+  height: 10vh !important;
+}
+
 /* .main { */
   /* min-height: 100vh; */
   /* padding: 4rem 0;
@@ -37,6 +41,7 @@
   width: 100%;
   background-color: #FAF9F6;
   color: white;
+  height: 12vh !important;
 }
 
 .footer a {
