@@ -1,0 +1,11 @@
+.pageContainer {
+    padding: 8px 16px;
+}
+
+.pageContainer h3 {
+    text-align: center;
+}
+
+.pageContainer li {
+    margin: 8px;
+}
