@@ -1,0 +1,33 @@
+.pageContainer {
+    padding: 8px 16px;
+}
+
+.pageContainer h3 {
+    text-align: center;
+}
+
+.pageHeader {
+    text-align: center;
+}
+
+.activitiesNav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.activitiesNav li {
+    padding: 4px 12px;
+    border-radius: 50px;
+    background-color: #FAF9F6;
+    color: #C19A6B;
+    margin: 0px 4px;
+}
+
+.activitiesContainer {
+    text-align: left;
+}
+
+.activeTab {
+    border: 2px solid #C19A6B;
+}

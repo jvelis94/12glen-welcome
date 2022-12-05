@@ -1,6 +1,6 @@
 import styles from '../styles/Rules.module.css'
 
-export default function Description() {
+export default function Rules() {
     return (
         <div className={styles.pageContainer}>
             <h3>House Rules</h3>
