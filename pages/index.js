@@ -40,7 +40,7 @@ export default function Home() {
         <small>✔ Outdoor deck with seating and a grill</small><br/>
         <small>✔ Brand new Hot Tub (fit for 5-7 people)</small><br/>
         <small>✔ Fire pit in the front lawn</small><br/>
-        <small>✔ Living room with Smart TV and 2 Cordaroy's Chairs that convert into Full sized beds</small><br/>
+        <small>✔ Living room with Smart TV and 2 Cordaroy&apos;s Chairs that convert into Full sized beds</small><br/>
 
         <h4 className={styles.titles}>Second Floor</h4>
         <small>✔ 1 bedroom with a Queen sized bed</small><br/>
