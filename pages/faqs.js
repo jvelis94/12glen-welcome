@@ -27,6 +27,25 @@ export default function Faqs() {
             </Typography>
             </AccordionDetails>
         </Accordion>
+        <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography>What are the house rules?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+            <ul>
+                <li>10 guests maximum</li>
+                <li>Pets allowed</li>
+                <li>Check-in after 4:00 PM</li>
+                <li>Check-out before 11:00 AM</li>
+                <li>No smoking indoors</li>
+                <li>Self check-in with smart lock</li>
+            </ul>
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
 }

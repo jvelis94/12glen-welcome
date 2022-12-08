@@ -67,15 +67,8 @@
   line-height: 1.15;
 }
 
-.title,
-.description {
+.title {
   text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
 }
 
 .code {
@@ -137,6 +130,15 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.titles {
+  margin-bottom: 4px;
+  margin-top: 24px
+}
+
+.description {
+  padding: 8px 16px
 }
 
 @media (max-width: 600px) {
