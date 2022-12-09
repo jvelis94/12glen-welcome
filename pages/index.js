@@ -24,7 +24,7 @@ export default function Home() {
       <div className={styles.description}>
         <h3 className={styles.titles}>Summary</h3>
         <p>
-          Come visit the mountains! You are invited to enjoy this perfect little chalet tucked away inside the Award Winning & Gold Star Certified Premier community of Big Bass Lake located in the Pocono Mountains. 
+          Come visit the mountains! You are invited to enjoy this perfect little chalet tucked away inside the Award Winning &amp; Gold Star Certified Premier community of Big Bass Lake located in the Pocono Mountains. 
         </p>
         <p>
           This 4-bedroom, 2 bathroom home is the perfect getaway! The home is equipped with a full kitchen and dining area, and a spacious living room. One of the highlights of the property is the backyard oasis, featuring a gorgeous newly installed Hot Tub which fits up to 7 guests!
@@ -40,7 +40,7 @@ export default function Home() {
         <small>✔ Outdoor deck with seating and a grill</small><br/>
         <small>✔ Brand new Hot Tub (fit for 5-7 people)</small><br/>
         <small>✔ Fire pit in the front lawn</small><br/>
-        <small>✔ Living room with Smart TV and 2 Cordaroy's Chairs that convert into Full sized beds</small><br/>
+        <small>✔ Living room with Smart TV and 2 Cordaroy&apos;s Chairs that convert into Full sized beds</small><br/>
 
         <h4 className={styles.titles}>Second Floor</h4>
         <small>✔ 1 bedroom with a Queen sized bed</small><br/>
@@ -57,7 +57,7 @@ export default function Home() {
         <small>✔ Trays</small><br/>
         <small>✔ Wine Glasses</small><br/>
         <small>✔ Silverware</small><br/>
-        <small>✔ Pots & Pans</small><br/>
+        <small>✔ Pots &amp; Pans</small><br/>
         <small>✔ Basic spices for cooking meals</small><br/>
       </div>
     </div>
