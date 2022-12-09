@@ -25,3 +25,6 @@ a {
   grid-template-rows: 5% 88% 5%;
 }
 
+main {
+  overflow: scroll;
+}
