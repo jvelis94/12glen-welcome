@@ -47,7 +47,7 @@ export default function Activities({data}) {
     )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     // const env = process.env.NODE_ENV
     // const domain = env == "development" ? "http://localhost:3000" : "https://12glen-welcome.vercel.app/"
     // const bars_data = await (await fetch(`${domain}/api/bars-sheet`)).json()
