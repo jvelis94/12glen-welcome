@@ -48,21 +48,40 @@ export default function Activities({data}) {
 }
 
 export async function getServerSideProps() {
-    const env = process.env.NODE_ENV
-    const domain = env == "development" ? "http://localhost:3000" : "https://12glen-welcome.vercel.app/"
-    const bars_data = await (await fetch(`${domain}/api/bars-sheet`)).json()
-    const restaurants_data = await (await fetch(`${domain}/api/restaurants-sheet`)).json()
-    const outdoors_data = await (await fetch(`${domain}/api/outdoors-sheet`)).json()
-    const tours_data = await (await fetch(`${domain}/api/tours-sheet`)).json()
+    // const env = process.env.NODE_ENV
+    // const domain = env == "development" ? "http://localhost:3000" : "https://12glen-welcome.vercel.app/"
+    // const bars_data = await (await fetch(`${domain}/api/bars-sheet`)).json()
+    // const restaurants_data = await (await fetch(`${domain}/api/restaurants-sheet`)).json()
+    // const outdoors_data = await (await fetch(`${domain}/api/outdoors-sheet`)).json()
+    // const tours_data = await (await fetch(`${domain}/api/tours-sheet`)).json()
+    const fs = require("fs");
+    const { parse } = require("csv-parse");
+
+    async function readFile(path) {
+        return new Promise((resolve, reject) => {
+            fs.readFile(path, 'utf8', function (err, data) {
+            parse(data, {columns: false, trim: true}, function(err, rows) {
+                if (err) {
+                    reject(err);
+                }
+                resolve(rows);
+            })
+            });
+        });
+    }
+    let bars_data = await readFile("./public/files/bars.csv");
+    let restaurants_data = await readFile("./public/files/restaurants.csv");
+    let outdoors_data = await readFile("./public/files/outdoor_activities.csv");
+    let tours_data = await readFile("./public/files/tours.csv");
 
     return {
         props: {
             data: {
                 activities: {
-                    bars: bars_data.data,
-                    restaurants: restaurants_data.data,
-                    outdoors: outdoors_data.data,
-                    tours: tours_data.data
+                    bars: bars_data,
+                    restaurants: restaurants_data,
+                    outdoors: outdoors_data,
+                    tours: tours_data
                 }
             }
         }
