@@ -27,7 +27,7 @@ export default function Activities({data}) {
     return (
         <div>
             <div>
-                <h3 className={styles.pageHeader}>Activies</h3>
+                <h3 className={styles.pageHeader}>Things to do</h3>
             </div>
             <div className={styles.activitiesContainer}>
                 <ul className={styles.activitiesNav}>
