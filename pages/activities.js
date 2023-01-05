@@ -4,7 +4,7 @@ import styles from '../styles/Activities.module.css'
 
 
 export default function Activities({data}) {
-    const [activeActivity, setActiveActivity] = useState('bars')
+    const [activeActivity, setActiveActivity] = useState('activities')
     const activities = data.activities
     
     let activityResults = activities.bars
@@ -15,14 +15,11 @@ export default function Activities({data}) {
         case 'restaurants':
             activityResults = activities.restaurants
             break;
-        case 'outdoors':
-            activityResults = activities.outdoors
+        case 'activities':
+            activityResults = activities.activities
             break;
-        case 'tours':
-            activityResults = activities.tours
-            break
         default:
-            activityResults = activities.bars
+            activityResults = activities.activities
     }
 
 
@@ -34,10 +31,9 @@ export default function Activities({data}) {
             </div>
             <div className={styles.activitiesContainer}>
                 <ul className={styles.activitiesNav}>
-                    <li className={activeActivity == 'bars' ? styles.activeTab : ''} onClick={() => setActiveActivity('bars')}>Bars</li>
+                    <li className={activeActivity == 'activities' ? styles.activeTab : ''} onClick={() => setActiveActivity('activities')}>Outdoors</li>
                     <li className={activeActivity == 'restaurants' ? styles.activeTab : ''} onClick={() => setActiveActivity('restaurants')}>Restaurants</li>
-                    <li className={activeActivity == 'outdoors' ? styles.activeTab : ''} onClick={() => setActiveActivity('outdoors')}>Outdoors</li>
-                    <li className={activeActivity == 'tours' ? styles.activeTab : ''} onClick={() => setActiveActivity('tours')}>Tours</li>
+                    <li className={activeActivity == 'bars' ? styles.activeTab : ''} onClick={() => setActiveActivity('bars')}>Bars</li>
                 </ul>
             </div>
             <div>
@@ -69,10 +65,9 @@ export async function getStaticProps() {
             });
         });
     }
-    let bars_data = await readFile("./data/csv/bars.csv");
-    let restaurants_data = await readFile("./data/csv/restaurants.csv");
-    let outdoors_data = await readFile("./data/csv/outdoor_activities.csv");
-    let tours_data = await readFile("./data/csv/tours.csv");
+    let bars_data = await readFile("./data/bars.csv");
+    let restaurants_data = await readFile("./data/restaurants.csv");
+    let activities_data = await readFile("./data/activities.csv");
 
     return {
         props: {
@@ -80,8 +75,7 @@ export async function getStaticProps() {
                 activities: {
                     bars: bars_data,
                     restaurants: restaurants_data,
-                    outdoors: outdoors_data,
-                    tours: tours_data
+                    activities: activities_data
                 }
             }
         }
