@@ -69,10 +69,10 @@ export async function getServerSideProps() {
             });
         });
     }
-    let bars_data = await readFile("./public/files/bars.csv");
-    let restaurants_data = await readFile("./public/files/restaurants.csv");
-    let outdoors_data = await readFile("./public/files/outdoor_activities.csv");
-    let tours_data = await readFile("./public/files/tours.csv");
+    let bars_data = await readFile("./data/csv/bars.csv");
+    let restaurants_data = await readFile("./data/csv/restaurants.csv");
+    let outdoors_data = await readFile("./data/csv/outdoor_activities.csv");
+    let tours_data = await readFile("./data/csv/tours.csv");
 
     return {
         props: {
