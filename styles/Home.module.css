@@ -16,7 +16,7 @@
   position: sticky;
   top:  0;
   background-color: #F5FAFA;
-  height: 32px;
+  height: 6vh;
 }
 
 /* .main { */
@@ -41,6 +41,7 @@
   width: 100%;
   background-color: #FAF9F6;
   color: white;
+  height: 10vh;
 }
 
 .footer a {
