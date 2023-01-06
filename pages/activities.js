@@ -36,7 +36,7 @@ export default function Activities({data}) {
                     <li className={activeActivity == 'bars' ? styles.activeTab : ''} onClick={() => setActiveActivity('bars')}>Bars</li>
                 </ul>
             </div>
-            <div>
+            <div className='activityResultsContainer'>
                 <ActivityResults activeActivity={activeActivity} activityResults={activityResults} />
             </div>
         </div>
