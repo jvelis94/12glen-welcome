@@ -32,13 +32,16 @@ main {
 }
 
 .scrollableContainer {
-  height: 100%;
+  height: inherit;
   margin-bottom: 12px;
   overflow: scroll;
 }
 
 .activityResultsContainer {
-  overflow: scroll;
+  height: inherit;
 }
 
+.activityResults {
+  height: inherit;
+}
 
