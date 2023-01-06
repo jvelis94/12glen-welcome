@@ -25,7 +25,7 @@ export default function Activities({data}) {
 
 
     return (
-        <div>
+        <div className='scrollableContainer'>
             <div>
                 <h3 className={styles.pageHeader}>Things to do</h3>
             </div>

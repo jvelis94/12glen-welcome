@@ -31,3 +31,9 @@ main {
   height: 83vh;
 }
 
+.scrollableContainer {
+  height: 100%;
+  margin-bottom: 12px;
+}
+
+
