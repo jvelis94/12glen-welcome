@@ -20,28 +20,14 @@ a {
   box-sizing: border-box;
 }
 
-/* #__next {
+#__next {
   display: grid;
   grid-template-rows: 1fr 18fr 1fr;
-} */
+}
 
 main {
   margin-bottom: 12px;
   overflow: scroll;
-  height: 83vh;
-}
-
-.scrollableContainer {
-  height: inherit;
-  margin-bottom: 12px;
-  overflow: scroll;
-}
-
-.activityResultsContainer {
-  height: inherit;
-}
-
-.activityResults {
-  height: inherit;
+  /* height: 83vh; */
 }
 
