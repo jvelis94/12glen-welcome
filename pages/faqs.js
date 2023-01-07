@@ -12,6 +12,23 @@ export default function Faqs() {
     <div className={styles.pageContainer}>
         <h3>FAQs</h3>
         <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>What are the house rules?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+              <ul>
+                  <li>No smoking inside</li>
+                  <li>No smoking or drinking while in the hot tub</li>
+                  <li>Please try to limit food and drink to the common areas and not the bedrooms</li>
+                  <li>Do not attempt to open any locked doors. These are private areas</li>
+              </ul>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
             <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -20,32 +37,41 @@ export default function Faqs() {
             <Typography>What are the check-out instructions?</Typography>
             </AccordionSummary>
             <AccordionDetails>
-            <Typography>
-                We aim to make the checkout process as painless as possible. We simply ask that the hot tub is covered and that the front/back doors are locked.
-                <br/><br/>
-                Our cleaning crew takes care of the garbage so no need to worry about that.
-            </Typography>
+              <ul>
+                  <li>Check out is at 11am</li>
+                  <li>Please leave the sink empty and load the dishwasher before you leave</li>
+                  <li>The community requires that all garbage and recycling be taken to the community compactors. The address will be provided post booking</li>
+                  <li>Close and lock all windows and exterior doors. Please only lock the smart lock of the front door</li>
+                  <li>Lower heat in bedrooms and bathrooms to 65 degrees</li>
+                  <li>Turn off all lights, ceiling fans, and other electrical devices.</li>
+                  <li>Please place the hot tub in ECO mode </li>
+              </ul>
             </AccordionDetails>
         </Accordion>
         <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography>What are the house rules?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-            <ul>
-                <li>10 guests maximum</li>
-                <li>Pets allowed</li>
-                <li>Check-in after 4:00 PM</li>
-                <li>Check-out before 11:00 AM</li>
-                <li>No smoking indoors</li>
-                <li>Self check-in with smart lock</li>
-            </ul>
-        </AccordionDetails>
-      </Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>How do I place the hot tub in ECO mode?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>Please hold the temperature and light button until the display shows "Ec", and leave the temperature at 86 degrees</Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>The hot tub water looks hazy, what do I do</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>Please take a test strip located under the kitchen sink and follow the instructions. Usually haziness is the result of a chemical imbalance. Based on the reading on the strip, please place the appropriate chemicals in the water</Typography>
+          </AccordionDetails>
+        </Accordion>
     </div>
   );
 }
