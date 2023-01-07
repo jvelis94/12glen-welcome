@@ -12,12 +12,12 @@
   height: 100%
 }
 
-.topContainer {
+/* .topContainer {
   height: 35%;
-}
+} */
 
 .description {
-  height: 65%;
+  height: 85%;
   overflow: scroll;
 }
 
@@ -73,6 +73,8 @@
 .title {
   margin-top: 12px;
   text-align: center;
+  font-family: Marker Felt, fantasy;
+  font-weight: bolder;
 }
 
 .code {
