@@ -57,7 +57,7 @@ export default function Faqs() {
             <Typography>How do I place the hot tub in ECO mode?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>Please hold the temperature and light button until the display shows "Ec", and leave the temperature at 86 degrees</Typography>
+            <Typography>Please hold the temperature and light button until the display shows &quot;Ec&quot;, and leave the temperature at 86 degrees</Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion>
