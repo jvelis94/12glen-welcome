@@ -9,7 +9,7 @@ import glensidePic from '../public/12glen_front.webp'
 
 export default function Home() {
   return (
-    <div className={styles.gridHomeContainer}>
+    <div className={styles.homeContainer}>
       <Head>
         <title>12 Glenside Drive</title>
         <meta name="description" content="12 Glenside Drive" />
