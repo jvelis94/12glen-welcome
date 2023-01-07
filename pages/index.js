@@ -22,6 +22,9 @@ export default function Home() {
           />
       </div>
       <div className={styles.description}>
+        <h1 className={styles.title}>
+          Big Bass Lake Chalet
+        </h1>
         <h3 className={styles.titles}>Summary</h3>
         <p>
           Come visit the mountains! You are invited to enjoy this perfect little chalet tucked away inside the Award Winning &amp; Gold Star Certified Premier community of Big Bass Lake located in the Pocono Mountains. 

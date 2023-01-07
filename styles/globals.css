@@ -1,5 +1,6 @@
 html,
 body {
+  height: 100%;
   padding: 0px !important;
   margin: 0px !important;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -18,15 +19,27 @@ a {
 
 * {
   box-sizing: border-box;
+  
 }
 
-#__next {
+/* #__next {
   display: grid;
   grid-template-rows: 1fr 9fr 1fr;
+} */
+#__next {
+  height: 100%;
 }
 
 main {
   margin-bottom: 12px;
-  height: 83vh;
+  height: 90%;
+  /* height: 90vh; */
 }
 
+.scrollableContainer, .activityResultsContainer, .activityResults {
+  height: 100%
+}
+
+.scrollableContainer {
+  overflow: scroll;
+}
