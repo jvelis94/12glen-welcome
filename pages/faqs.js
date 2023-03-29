@@ -32,7 +32,7 @@ export default function Faqs() {
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1b-content"
-            id="panel2b-header"
+            id="panel1b-header"
           >
             <Typography>Why do I need to check in at the community gate prior to entering the house?</Typography>
           </AccordionSummary>
@@ -75,8 +75,8 @@ export default function Faqs() {
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
+            aria-controls="panel2b-content"
+            id="panel2b-header"
           >
             <Typography>Where are the community trash bins?</Typography>
           </AccordionSummary>
@@ -87,8 +87,8 @@ export default function Faqs() {
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2b-content"
-            id="panel2b-header"
+            aria-controls="panel2c-content"
+            id="panel2c-header"
           >
             <Typography>How do I place the hot tub in ECO mode?</Typography>
           </AccordionSummary>
@@ -99,8 +99,8 @@ export default function Faqs() {
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2c-content"
-            id="panel2c-header"
+            aria-controls="panel2d-content"
+            id="panel2d-header"
           >
             <Typography>The hot tub is not heating up, how do I fix this?</Typography>
           </AccordionSummary>
